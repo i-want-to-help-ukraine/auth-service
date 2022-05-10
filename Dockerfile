@@ -12,4 +12,5 @@ RUN npm config set '//npm.pkg.github.com/:_authToken' "${GITHUB_NPM_TOKEN}" && n
 
 COPY . .
 
+RUN npm run prisma:generate
 RUN npm run build
