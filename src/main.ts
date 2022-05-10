@@ -16,9 +16,9 @@ async function bootstrap() {
         process.cwd(),
         './node_modules/@i-want-to-help-ukraine/protobuf/schema/auth-service.proto',
       ),
-      url: `${configService.get(
-        'VOLUNTEER_SERVICE_GRPC_NAME',
-      )}:${configService.get('VOLUNTEER_SERVICE_GRPC_PORT')}`,
+      url: `${configService.get('AUTH_SERVICE_GRPC_NAME')}:${configService.get(
+        'AUTH_SERVICE_GRPC_PORT',
+      )}`,
       loader: {
         arrays: true,
         objects: true,
